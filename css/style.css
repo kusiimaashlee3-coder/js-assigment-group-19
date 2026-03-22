@@ -12,7 +12,10 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
-
+main{
+    position: relative;
+    min-height: 100vh;
+}
 .navbar {
     background: #007bff;
     padding: 10px 20px;
