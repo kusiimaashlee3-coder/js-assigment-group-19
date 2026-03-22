@@ -2,6 +2,8 @@
 // Demonstrates DOM manipulation (getElementById, querySelector, createElement, appendChild, innerHTML, addEventListener), events, arrays/objects, localStorage, try-catch error handling
 
 // Global products array (6+ products as required, stored as JS objects)
+//const means constant
+//we arrary to store many values in one place
 const products = [
     {id: 1, name: "Laptop", price: 1200000, category: "Electronics", image: "images/laptop.jpg"},
     {id: 2, name: "Phone", price: 4000000, category: "Electronics", image: "images/phone.jpg"},
@@ -13,7 +15,7 @@ const products = [
 
 let cart = []; // Global cart array of objects {id, name, price, image, qty}
 
-// Load cart from localStorage with error handling (try-catch)
+// Load cart from localStorage with error handling (try-catch) 
 function loadCart() {
     try {
         const saved = localStorage.getItem("cart");
@@ -34,6 +36,8 @@ function loadCart() {
 }
 
 // Save cart to localStorage with error handling
+//try which shows a code that might cause an error
+//catch(error) ; the code that run if the an error occurs
 function saveCart() {
     try {
         localStorage.setItem("cart", JSON.stringify(cart));
@@ -184,7 +188,7 @@ function validateCheckout() {
         // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
-            throw new Error("Invalid email format.");
+            throw new Error("Invalid email format.");// message that appears when email is invalid
         }
 
         // Phone validation (digits, min 10)
