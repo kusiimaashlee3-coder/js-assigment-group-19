@@ -25,6 +25,9 @@ main{
     justify-content: space-between;
     align-items: center;
 }
+.navbar a:hover {
+    color: #ffd700;
+}
 
 .navbar a {
     color: white;
