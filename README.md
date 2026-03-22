@@ -1,3 +1,3 @@
 # js-assigment-group-19
-javascipt assignment
+javascript assignment
 
